@@ -146,3 +146,39 @@ button{
 button:hover{
     background-color: var(--color-primario);
 }
+
+.lista-carrusel{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    overflow-x: scroll; /*El contenedor permita un dexplazamiento orizontal*/
+    scroll-snap-type: x; 
+}
+
+.producto-item{
+    scroll-snap-align: start;
+    /* Definir cómo los elementos individuales dentro de un contenedor de scroll se alínean cuando se ajustan */
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.producto-item img{
+    border-radius: 10px;
+}
+
+.producto-titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto-precio{
+    font-size: 14px;
+    color:#0070F3;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
