@@ -1,0 +1,101 @@
+:root{
+    --color-primario : #918849;
+    --color-background:  #3c78ad;
+    --color-acentos: #e3f2fd;
+    --color-bordes:#b6b2b2;
+    --color-texto: #333;
+    --color-secundario: #c4c4c4;
+}
+
+/* Reset básico */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-texto);
+    line-height: 1.8;
+
+}
+
+header{
+    text-align: center;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 20px;
+}
+
+section{
+    /* Los valores para la propiedad border son tres separados cada uno por un espacio:
+    el primero es el grosor del borde
+    el segundo es el tipo de estilo del borde
+    el tercero es el color */
+    border: 3px solid var(--color-bordes); 
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+}
+
+h2{
+    color: var(--color-primario)
+}
+
+.box{
+    background-color: var(--color-acentos);
+    border: 1px solid var(--color-primario);
+    margin: 10px auto;
+    /* El valor auto en la propiedad de margin hace que el navegador calcule
+    automáticamente el espacio necesario para centrar un elemento dentro de su contendedor padre,
+    siempre que el elemento tenga un ancho definido. Esta manera de centar los elementos sólo aplica de manera
+    horizontal.*/
+    padding: 10px;
+    text-align: center;
+    font-weight: semibold;
+    border-radius: .5rem;
+}
+
+.block{
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.inline{
+    display: inline;
+    width: 150px;
+    height: 30px;
+    /* width y height son ignorados porque los elementos inline no respetan esta propiedad. */
+}
+
+.inline-block{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+   
+}
+
+.model{
+    padding: 20px;
+    border: 10px solid var(--color-primario);
+    margin: 20px;
+}
+
+.content-box{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid var(--color-primario);
+    background-color: var(--color-acentos);
+    width: 200px;
+}
+
+.border-box{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid var(--color-primario);
+    background-color: var(--color-acentos);
+    width: 200px;
+}
