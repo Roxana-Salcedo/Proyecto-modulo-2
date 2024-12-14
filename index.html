@@ -15,13 +15,35 @@
         <h3>Nuestra Boda</h3> 
         <h1>Ulises y Roxana</h1>
         <p>Es un honor poder contar con tu presencia en este día tan especial en nuestras vidas</p>
+        <nav aria-label="Mapa de navegación de la página">
+            <ul class="navbar">
+                <li><a class="nav-link" href="#">Confirma tu asistencia</a></li>
+                <li><a class="nav-link" href="#tarjetas">Donde y cuando</a></li>
+                <li><a class="nav-link"  href="#formulario">Itinerario</a></li>
+                <li><a class="nav-link"  href="#formulario">Codigo de vestimenta</a></li>
+                <li><a class="nav-link"  href="#formulario">Regalos</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- Secciones de mi página -->
          <section>
-            <h2>Invitación</h2>
-            <p>¡Nos encantaría contar contigo!</p>
+            <h2>¡Nos encantaría contar contigo!</h2>
               <p>Por favor, confirma tu asistencia antes del 08 de mayo del 2025 al (número de teléfono) o en el siguiente formulario</p>
+              <form>
+                  <label for="nombre">Nombre completo:</label>
+                  <input type="text">
+
+                  <label for="teléfono">Whatsapp:</label>
+                  <input type="tel">
+
+                  <label for="Corfimación de asistencia">Cormación de asistencia</label>
+            <select id="Confimación de asistencia" required>
+                <option>Cuenta con mi presencia</option>
+                <option>No me es posible asistir</option>
+            </select>
+                  <button type="submit">Enviar</button>
+              </form>
             </section>
 
          <section>
@@ -42,6 +64,7 @@
          <section>
             <h2>Itinerario</h2>
             <p>¡Hora por hora, los detalles del gran día!</p>
+
             <div class="box block">
                 <a href="#"><span class="material-icons">church</span>Ceremonia 18:00 hrs</a>
             </div>
