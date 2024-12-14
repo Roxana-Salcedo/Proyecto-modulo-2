@@ -1,6 +1,6 @@
 :root{
-    --color-primario : #918849;
-    --color-background:  #3c78ad;
+    --color-primario : #316378;
+    --color-background:  #75724a;
     --color-acentos: #aad3f0;
     --color-bordes:#b6b2b2;
     --color-texto: #333;
@@ -22,7 +22,7 @@ body{
 header{
     text-align: center;
     background-color: var(--color-primario);
-    color: var(--color-texto);
+    color: var(--color-secundario);
     padding: 20px;
 }
 
