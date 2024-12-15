@@ -94,8 +94,8 @@ h2{
     /* width y height son ignorados porque los elementos inline no respetan esta propiedad. */
 }
 
-.inline-block{
-    display: inline-block;
+.inline-flex{
+    display: inline-flex;
     width: 150px;
     height: 30px;
    
@@ -131,7 +131,6 @@ form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 400px;
     margin: 0 auto;
 }
 
@@ -153,6 +152,16 @@ button:hover{
     padding: 10px;
     overflow-x: scroll; /*El contenedor permita un dexplazamiento orizontal*/
     scroll-snap-type: x; 
+}
+
+.lista-carrusel .codigo-item img {
+    @media (max-width: 1024px) {
+        object-fit: contain;
+        object-position: left;
+        aspect-ratio: 1 / 1;
+        width: 250px;
+        height: 400px;
+    }
 }
 
 .producto-item{
@@ -223,6 +232,14 @@ main{
     opacity: 0;
     border-radius: .5rem;
     transition: opacity 0.3s;
+}
+
+.donde .img-donde {
+    object-fit: contain;
+    width: -webkit-fill-available;
+    @media (max-width: 768px) {
+        aspect-ratio: 1 / 1;
+    }
 }
 
 .contenedor-imagen img{
